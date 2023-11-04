@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'projectAng';
+  public counter: number = 10;
+  increaseBy(value: number){
+    this.counter+=value;
+  }
+
+  //increaseOne(){
+  //  this.counter ++;
+  //}
+  //decreaseOne(){
+   // this.counter --;
+  //}
 }
